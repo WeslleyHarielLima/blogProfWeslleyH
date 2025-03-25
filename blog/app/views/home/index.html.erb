@@ -1,0 +1,30 @@
+    <header>
+        <h1>Bem-vindo à Página Inicial, <%= @nome  %>
+</h1>
+    </header>
+
+    <main>
+        <h2>Sobre nós</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui sit amet purus dapibus volutpat. Vivamus vel purus ac lectus tristique faucibus. Cras nec lectus ac nulla faucibus malesuada. Proin lacinia purus et ante hendrerit, sit amet consequat nisl facilisis. Curabitur euismod sapien id felis vestibulum, a laoreet ipsum consectetur. Nunc interdum, urna ac efficitur gravida, ligula risus tempor orci, ut elementum enim ante a lorem.</p>
+
+        <h2>Nosso Serviço</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut varius mi. Proin viverra tortor ac felis lacinia, ac placerat ante dapibus. Donec ultricies eros sit amet turpis malesuada, in luctus magna egestas. Morbi euismod, eros vel tempor elementum, erat lectus tincidunt purus, eget interdum eros sapien a ante.</p>
+    </main>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @nomes.each do |nome| %>
+      <tr>
+        <td><%= nome %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+    <footer>
+        <p>&copy; 2025 Página Inicial. Todos os direitos reservados.</p>
+    </footer>
